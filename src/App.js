@@ -372,7 +372,7 @@ function App(prop) {
                         <ul>
                             {menu.title && (
                                 <li className="menutitle mm-listitem">
-                                    <span className="mm-listitem__text">{menu.title}</span> 
+                                    <span className="mm-listitem__text">{menu.title}</span>
                                 </li>
                             )}
                             {menu.submenu.map(function (submenu, i) {
