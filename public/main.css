@@ -2,3 +2,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css");
 @import url("/assets/fontawesome/css/all.css");
 @import url("/assets/mmenu-js-master/dist/mmenu.css");
+html {
+    touch-action: manipulation;
+}
