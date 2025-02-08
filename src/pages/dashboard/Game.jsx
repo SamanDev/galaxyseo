@@ -168,7 +168,7 @@ const Dashboard = (prop) => {
                 if ((game != mainGame && i > 0 && (defGamesStatus[game] || typeof defGamesStatus[game] === "undefined")) || game == "wheel") {
                     _gameOptions.push({
                         key: game,
-                        text: gameDataMainName[i],
+                        text: gameDataMainName[i].replace("b","B"),
                         value: game,
                     });
                 }
@@ -422,7 +422,7 @@ const Dashboard = (prop) => {
             ),
         },
     ];
-if(!getPropertyNoCase(sessionmyKey,secondaryGame) && secondaryGame != '777slot'){
+if(!getPropertyNoCase(sessionmyKey,secondaryGame) && secondaryGame != '777slot' && secondaryGame != 'poker'){
     return <div className="mainsection" style={{textAlign:'center',padding:'100px 0',color:'white',fontSize:40}}>Game is not available.</div>
 }
     return (

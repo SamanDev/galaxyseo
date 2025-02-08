@@ -1,9 +1,8 @@
 import React,{useEffect,useState} from "react";
 
 import { Link } from "react-router-dom";
-import { Grid, Divider ,Image} from "semantic-ui-react";
-import { gameDataMain, gameData, gameDataName } from "../../const";
-import GameBox from "../../utils/GameBox";
+import { Grid, Image} from "semantic-ui-react";
+import { gameDataMain, gameData } from "../../const";
 import { getGamesStatus } from "../../services/public";
 const getPropertyNoCase = (obj, prop) => {
    
